@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lingaaeswaran M - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Montserrat', sans-serif; background: #0f172a; color: #f1f5f9; }
+
+    header { background: #1e293b; padding: 2rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; }
+
+    nav {
+      background: #111827;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 0.8rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 99;
+    }
+
+    nav a {
+      color: #f1f5f9;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover { color: #38bdf8; }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 1rem;
+    }
+
+    .profile-section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      background: #1e293b;
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .profile-section img {
+      width: 170px;
+      border-radius: 50%;
+      border: 4px solid #38bdf8;
+    }
+
+    .profile-info h2 {
+      margin-bottom: 0.5rem;
+      color: #f1f5f9;
+    }
+
+    .section h3 {
+      color: #38bdf8;
+      border-left: 5px solid #2563eb;
+      padding-left: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+      margin-bottom: 2rem;
+    }
+
+    ul { margin-left: 1.5rem; }
+
+    a { color: #60a5fa; }
+
+    footer {
+      background: #111827;
+      text-align: center;
+      padding: 1rem;
+      color: #94a3b8;
+    }
+
+    @media (max-width: 768px) {
+      .profile-section { flex-direction: column; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Lingaaeswaran M</h1>
+  <p>Machine Learning Intern | Web & App Developer</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#certifications">Certifications</a>
+</nav>
+
+<div class="container">
+
+  <section class="profile-section">
+    <img src="photo.jpg" alt="Lingaaeswaran Photo" />
+    <div class="profile-info">
+      <h2>Lingaaeswaran M</h2>
+      <p><strong>Email:</strong> <a href="mailto:lingeshmuthu14@gmail.com">lingeshmuthu14@gmail.com</a></p>
+      <p><strong>Phone:</strong> +91 8939465190</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/lingaaeswaram-muthuraj" target="_blank">View Profile</a></p>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About Me</h3>
+    <div class="card">
+      <p>
+        I'm a final-year Computer Science student at Sathyabama Institute of Science and Technology, passionate about Machine Learning, App Development, and Web Technologies. I enjoy solving real-world problems and creating user-centric digital solutions.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" id="skills">
+    <h3>Skills</h3>
+    <div class="card">
+      <ul>
+        <li><strong>Technical:</strong> Python, SQL, ML Pipelines, Microsoft Office</li>
+        <li><strong>Non-Technical:</strong> Adaptability, Team Collaboration, Problem-Solving, Communication, Critical Thinking</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="projects">
+    <h3>Projects</h3>
+    <div class="card">
+      <ul>
+        <li><strong>College Bus Tracking App (2025):</strong> Built using Flutter + Firebase with real-time GPS tracking and Firebase Auth for secure student/driver roles.</li>
+        <li><strong>Event Management Website (2024):</strong> Created a fully responsive event portal using HTML, CSS, and JavaScript for campus event organization and user registration.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="experience">
+    <h3>Experience</h3>
+    <div class="card">
+      <p><strong>VCODEZ, Chennai</strong> — <em>ML Intern (Jan – Apr 2025)</em></p>
+      <ul>
+        <li>Developed a Streamlit app for real-time weather classification and prediction using WeatherAPI data.</li>
+        <li>Trained and compared multiple ML models including Random Forest; visualized data and integrated a dual-model system.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="education">
+    <h3>Education</h3>
+    <div class="card">
+      <ul>
+        <li><strong>B.E. CSE</strong> – Sathyabama Institute of Science and Technology, Chennai (CGPA: 7.07, 2021–2025)</li>
+        <li><strong>XII:</strong> Sri Chaitanya CBSE School, Chennai – 83.4%</li>
+        <li><strong>X:</strong> TVS Matric Hr Sec School, Madurai – 75.2%</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="certifications">
+    <h3>Certifications</h3>
+    <div class="card">
+      <ul>
+        <li>NPTEL: Database Management System (2023)</li>
+        <li>Oracle Cloud Infrastructure – AI Certified Foundations Associate (2023)</li>
+      </ul>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>&copy; 2025 Lingaaeswaran M. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
